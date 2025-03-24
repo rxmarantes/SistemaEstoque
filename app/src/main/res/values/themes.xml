@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SistemaEstoque" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/headline</item>
+        <item name="colorPrimaryVariant">@color/paragraph</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/button</item>
+        <item name="colorSecondaryVariant">@color/highlight</item>
+        <item name="colorOnSecondary">@color/button_text</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/background</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/headline</item>
+        <item name="android:textColorSecondary">@color/paragraph</item>
+    </style>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".AddEditItemActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Item"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/headline"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textSize="16sp"
+        android:textColor="@color/paragraph"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a descrição do item"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade:"
+        android:textSize="16sp"
+        android:textColor="@color/paragraph"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a quantidade"
+        android:inputType="number"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/button_text"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:backgroundTint="@color/tertiary"
+        android:textColor="@color/headline"/>
+
+</LinearLayout>

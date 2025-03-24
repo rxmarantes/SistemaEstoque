@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Happy Hues -->
+    <color name="background">#ffffff</color>
+    <color name="headline">#272343</color>
+    <color name="paragraph">#2d334a</color>
+    <color name="button">#ffd803</color>
+    <color name="button_text">#272343</color>
+
+    <!-- Cores de ilustração -->
+    <color name="stroke">#272343</color>
+    <color name="main">#ffffff</color>
+    <color name="highlight">#ffd803</color>
+    <color name="secondary">#e3f6f5</color>
+    <color name="tertiary">#bae8e8</color>
+
+    <!-- Cores padrão do sistema -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
