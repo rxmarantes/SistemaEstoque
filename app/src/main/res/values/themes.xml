@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.SistemaEstoque" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.SistemaEstoque" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/headline</item>
-        <item name="colorPrimaryVariant">@color/paragraph</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/primary_100</item>
+        <item name="colorPrimaryVariant">@color/primary_200</item>
+        <item name="colorOnPrimary">@color/text_100</item>
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/button</item>
-        <item name="colorSecondaryVariant">@color/highlight</item>
-        <item name="colorOnSecondary">@color/button_text</item>
+        <item name="colorSecondary">@color/accent_100</item>
+        <item name="colorSecondaryVariant">@color/accent_200</item>
+        <item name="colorOnSecondary">@color/text_100</item>
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/primary_200</item>
 
         <!-- Background color -->
-        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowBackground">@color/bg_100</item>
 
         <!-- Text colors -->
-        <item name="android:textColorPrimary">@color/headline</item>
-        <item name="android:textColorSecondary">@color/paragraph</item>
+        <item name="android:textColorPrimary">@color/text_100</item>
+        <item name="android:textColorSecondary">@color/text_200</item>
     </style>
 </resources>

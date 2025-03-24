@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Paleta Happy Hues -->
-    <color name="background">#ffffff</color>
-    <color name="headline">#272343</color>
-    <color name="paragraph">#2d334a</color>
-    <color name="button">#ffd803</color>
-    <color name="button_text">#272343</color>
+    <!-- Nova paleta de cores -->
+    <color name="primary_100">#FFD700</color>
+    <color name="primary_200">#ddb900</color>
+    <color name="primary_300">#917800</color>
+    <color name="accent_100">#C0C0C0</color>
+    <color name="accent_200">#626262</color>
+    <color name="text_100">#333333</color>
+    <color name="text_200">#5c5c5c</color>
+    <color name="bg_100">#F7F7F7</color>
+    <color name="bg_200">#ededed</color>
+    <color name="bg_300">#c4c4c4</color>
+
+    <!-- Mapeamento para as cores utilizadas no app -->
+    <color name="background">@color/bg_100</color>
+    <color name="headline">@color/text_100</color>
+    <color name="paragraph">@color/text_200</color>
+    <color name="button">@color/primary_100</color>
+    <color name="button_text">@color/text_100</color>
 
     <!-- Cores de ilustração -->
-    <color name="stroke">#272343</color>
-    <color name="main">#ffffff</color>
-    <color name="highlight">#ffd803</color>
-    <color name="secondary">#e3f6f5</color>
-    <color name="tertiary">#bae8e8</color>
+    <color name="stroke">@color/accent_200</color>
+    <color name="main">@color/bg_100</color>
+    <color name="highlight">@color/primary_100</color>
+    <color name="secondary">@color/bg_200</color>
+    <color name="tertiary">@color/accent_100</color>
 
     <!-- Cores padrão do sistema -->
     <color name="black">#FF000000</color>

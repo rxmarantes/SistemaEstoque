@@ -23,10 +23,10 @@
         android:id="@+id/btnAdicionarItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adicionar Novo Item"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/button"
-        android:textColor="@color/button_text"
-        android:layout_marginBottom="8dp"/>
+        android:text="Adicionar Item"
+        android:textColor="@color/button_text" />
 
     <TextView
         android:layout_width="match_parent"
