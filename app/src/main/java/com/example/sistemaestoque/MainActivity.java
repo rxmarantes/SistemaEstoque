@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -54,6 +57,32 @@ public class MainActivity extends AppCompatActivity {
 
         // Carrega e exibe os itens iniciais do banco de dados
         carregarItens();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.menu_listar) {
+            // Navegar para a tela de listagem
+            Intent intent = new Intent(this, ListagemActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.menu_cadastrar) {
+            // Navegar para a tela de cadastro
+            Intent intent = new Intent(this, CadastroActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private void carregarItens() {
@@ -176,4 +205,5 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Dados de exemplo adicionados!", Toast.LENGTH_SHORT).show();
         }
     }
+
 }

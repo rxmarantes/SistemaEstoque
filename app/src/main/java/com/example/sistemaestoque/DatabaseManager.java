@@ -1,6 +1,7 @@
 package com.example.sistemaestoque;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -36,5 +37,18 @@ public class DatabaseManager extends SQLiteOpenHelper {
         // Em caso de upgrade, podemos adotar a estratégia simples de recriar a tabela
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_ITEM);
         onCreate(db);
+    }
+
+    public int getItemCount() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT COUNT(*) FROM item", null);
+        int count = 0;
+
+        if (cursor.moveToFirst()) {
+            count = cursor.getInt(0);
+        }
+
+        cursor.close();
+        return count;
     }
 }
